@@ -23,8 +23,10 @@ if (plantType === "flower") {
     advice += "No advice for this type of plant.";
 }
 
-// Log the generated advice to the console
-console.log(advice);
+// Log the generated advice to screen
+const paragraph = document.createElement("p")
+paragraph.textContent = advice
+document.body.appendChild(paragraph)
 
 // TODO: Examples of possible features to add:
 // - Add detailed comments explaining each block of code.
